@@ -1,6 +1,8 @@
 {
   "devDependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.2",
+    "node-static": "^0.7.11",
     "request": "^2.83.0"
   }
 }

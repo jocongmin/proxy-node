@@ -20,7 +20,7 @@ app.use('/v1', function(req, res) {  //v1这个路由的转发代理，获取api
 	res.header("Access-Control-Allow-Origin", "*");
 	res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
 	res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
-	var url = 'http://local.newwechat.ename.cn/v1' + req.url;
+	var url = 'http://ecare.ename.com/v1' + req.url;
 	console.log(url, "url")
 	req.pipe(request(url)).pipe(res);
 }); 
